@@ -1,0 +1,15 @@
+{
+  "autoencoder_threshold": 3.210160255432129,
+  "known_attack_novelty_threshold": 145.23123168945312,
+  "cnn_lstm_threshold": 0.05,
+  "random_forest_confidence_threshold": 0.31499999999999995,
+  "ensemble_threshold": 28.75,
+  "cnn_weight": 0.5,
+  "random_forest_weight": 0.25,
+  "autoencoder_weight": 0.25,
+  "holdout_family": "MIRAI",
+  "window_size": 10,
+  "seed": 42,
+  "subsample_frac": 0.2,
+  "method": "family-held-out, stream-safe, leakage-safe"
+}

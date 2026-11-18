@@ -1,0 +1,24 @@
+{
+	"autoencoder": {
+		"test_type": "unknown_anomaly_detection",
+		"model": "training/models/autoencoder.h5",
+		"input_features": 115,
+		"scoring": "mean_squared_reconstruction_error_in_scaled_space",
+		"baseline": {
+			"source": "ml_server/validated_sequences/normal.npy",
+			"rows": 10,
+			"mean_reconstruction_error": 0.09920186,
+			"sequence_threshold": 0.21318430
+		},
+		"unknown_anomaly": {
+			"description": "Normal sequence with +8 sigma applied to the first 20 features",
+			"rows": 10,
+			"mean_reconstruction_error": 9.24653721,
+			"threshold_ratio": 43.37,
+			"flagged_rows": 10,
+			"total_rows": 10,
+			"classification": "ANOMALY"
+		},
+		"result": "PASS"
+	}
+}
